@@ -1,0 +1,41 @@
+{
+    "day": {
+        "prefix": "day",
+        "body": [
+            "from typing import List",
+            "",
+            "InputType = List[int]",
+            "",
+            "def answer_1(input: InputType):",
+            "\treturn 1",
+            "",
+            "def answer_2(input: InputType):",
+            "\treturn 2",
+            "",
+            "def parse_lines(lines) -> InputType:",
+            "\treturn [1]"
+        ]
+    },
+	"daytest": {
+        "prefix": "daytest",
+        "body": [
+            "from src.day$0 import answer_1, answer_2, parse_lines",
+            "from src.util import get_input",
+            "",
+            "example_input = parse_lines(get_input('test-day$0'))",
+            "input = parse_lines(get_input('day$0'))",
+            "",
+            "def test_example_1():",
+            "\tassert answer_1(example_input) == 7",
+            "",
+            "def test_solution_1():",
+            "\tassert answer_1(input) == 1390",
+            "",
+            "def test_example_2():",
+            "\tassert answer_2(example_input) == 5",
+            "",
+            "def test_solution_2():",
+            "\tassert answer_2(input) == 1457"
+        ]
+    }
+}
